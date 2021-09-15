@@ -21,7 +21,7 @@ diff -upr openssl-1.1.1d_orig/ssl/statem/extensions.c openssl-1.1.1d/ssl/statem/
      },
      {
 +        TLSEXT_TYPE_compress_certificate,
-+        SSL_EXT_CLIENT_HELLO,
++        SSL_EXT_CLIENT_HELLO | SSL_EXT_TLS1_2_SERVER_HELLO | SSL_EXT_TLS1_3_ENCRYPTED_EXTENSIONS,
 +        NULL,
 +        NULL, NULL,
 +        NULL,
